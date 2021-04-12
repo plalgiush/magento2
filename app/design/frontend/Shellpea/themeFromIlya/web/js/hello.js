@@ -1,13 +1,10 @@
 define([
-    'jquery'
-], function ($) {
+], function () {
     'use strict';
 
     return function (config, element) {
-        console.log(config);
+        console.log(config.a);
         console.log(element);
         console.log("hello world");
     }
 });
-
-

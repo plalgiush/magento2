@@ -8,5 +8,9 @@
                 <argument name="logo_alt" xsi:type="string">Logo name</argument>
             </arguments>
         </referenceBlock>
+        
+        <referenceContainer name="content.top">
+            <block class="Magento\Framework\View\Element\Template" name="task-text" template="Magento_Theme::test.phtml" /> 
+        </referenceContainer>      
     </body>
 </page>
