@@ -1,11 +1,49 @@
-.task-text {
-    background-color:#ccc;
-    color:lightskyblue;
-    font-size:30px;
-    font-family:calibri;
+& when (@media-common = true) {
+    .task-text {
+        background-color:#ccc;
+        color:lightskyblue;
+        font-size:30px;
+        font-family:calibri;
+    }
+
+    .test-product {
+        background-color:#ccc;
+        color:rgb(250, 149, 33);
+    }
+
+    table.multiplication_table {
+        margin: 0 auto;
+        width: 250px;
+        border: 1px solid;
+        text-align: center;    
+    }
+
+    .multiplication_table td:nth-last-of-type(even) {
+        background-color: green;
+    }
+
+    .multiplication_table tr:nth-last-of-type(even) {
+        background-color: burlywood;
+    }
+
+    .multiplication_table {
+        .cross {
+            .cross {
+                background-color: red;
+            }
+        }
+    }
+
+    // .multiplication_table {
+    //     tr {
+    //         .table_cell {
+    //             background-color: grey;
+    //         }
+    //     }
+    // }
+
+    .multiplication_table td.table_cell {
+        background-color: grey;
+    }
 }
 
-.test-product {
-    background-color:#ccc;
-    color:rgb(250, 149, 33);
-}
