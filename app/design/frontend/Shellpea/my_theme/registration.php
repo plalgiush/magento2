@@ -6,4 +6,4 @@
 
 use \Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::THEME, 'frontend/Shellpea/themeFromIlya', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::THEME, 'frontend/Shellpea/my_theme', __DIR__);

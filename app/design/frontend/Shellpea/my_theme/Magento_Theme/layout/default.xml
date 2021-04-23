@@ -12,5 +12,16 @@
         <referenceContainer name="content.top">
             <block class="Magento\Framework\View\Element\Template" name="task-text" template="Magento_Theme::test.phtml" /> 
         </referenceContainer>      
+
+        <referenceBlock name="footer_links" remove="true"/>
+        <referenceBlock name="form.subscribe" remove="true"/>
+        <referenceBlock name="copyright" remove="true"/>
+
+        <!-- <referenceContainer name="footer">
+            <block class="Magento\Framework\View\Element\Template" name="footer-links" template="Magento_Theme::footer.phtml" /> 
+        </referenceContainer>    
+     -->
+
+
     </body>
 </page>

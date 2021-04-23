@@ -1,0 +1,63 @@
+<p class="task-text <?= $block->hasCssClass() ? ' ' . $block->getCssClass() : '' ?>">This is a paragraph.</p>
+
+<?php
+if ($block->hasCssClass()) {
+    echo ' ' . $block->getCssClass();
+} else {
+    echo '';
+}
+ 
+?>
+
+
+<?php 
+$cols = 9;
+$rows = 9; ?>
+
+<table class="multiplication_table">
+    <?php for ($tr = 1; $tr <= $rows; $tr ++): ?>
+        <tr <?php if ($tr % 2 == 0): ?>class="cross"<?php endif; ?>>
+            <?php for ($td = 1; $td <= $cols; $td ++): ?>
+                <td <?php if ($td % 2 == 0): ?>class="cross"<?php endif; ?>><?= $tr * $td ?></td>
+            <?php endfor ?>
+        </tr>
+    <?php endfor ?>
+</table>
+
+
+
+
+<table class='multiplication_table'>
+
+<?php 
+$cols = 9;
+$rows = 9;
+
+ for ($tr = 1; $tr <= $rows; $tr ++) {
+            echo "<tr>";
+            for ($td = 1; $td <= $cols; $td ++) {
+                if ($tr % 2 == 0 && $td % 2 == 0) {
+                    echo "<td class='table_cell'>" . $tr * $td . "</td>";
+                } else {
+                    echo "<td>" . $tr * $td . "</td>";
+                }
+            }
+        echo "</tr>";
+    } ?>
+</table>
+
+
+
+<?php 
+
+$value = 1;
+$sum = 0;
+
+while($value <= 99) {
+    $sum = $sum + $value;
+    $value+=2;
+}
+echo "The number is: $sum <br>";
+    
+
+?>
