@@ -19,9 +19,7 @@
 
         <!-- <referenceContainer name="footer">
             <block class="Magento\Framework\View\Element\Template" name="footer-links" template="Magento_Theme::footer.phtml" /> 
-        </referenceContainer>    
-     -->
-
-
+        </referenceContainer>     -->
+    
     </body>
 </page>

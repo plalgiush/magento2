@@ -246,7 +246,7 @@
                     margin: 0;
                 }
 
-                .footer_header {
+                .footer_head {
                     display: flex;
                     justify-content: flex-end;
                     padding: 20px 0;
@@ -272,7 +272,7 @@
                             border-radius: 50%;
                             overflow: hidden;
 
-                            span {
+                            .upsidedown-icon {
                                 border: 2px solid #005AB4;
                                 width: 8px;
                                 height: 8px;
@@ -294,13 +294,10 @@
                     border-bottom: 1px solid #eceded;
 
                     .footer_accordion:first-child {
-
-                        h3 {
+                        .footer_accordion-label-big {
                             margin-top: auto;
                         }
                     }
-
-
 
                     .footer_accordion {
                         &.active {
@@ -317,7 +314,7 @@
                             margin-bottom: 20px;
                             cursor: pointer;
 
-                            h3 {
+                            .footer_accordion-label-big {
                                 font-family: 'GothamSSm-Bold', sans-serif;
                                 display: flex;
                                 align-items: baseline;
@@ -348,8 +345,8 @@
                                 text-decoration: none;
                                 color: #6e7276;
                             }
-                            
-                            li {
+                        
+                            .footer_column-item {
                                 padding-bottom: 10px;
                             }
                         }
@@ -381,7 +378,7 @@
                                     cursor: pointer;
                                 }
 
-                                p {
+                                .icon-location-text {
                                     margin: 0 20px 0 0;
                                     font-size: 15px;
                                     cursor: pointer;
@@ -390,11 +387,9 @@
                             
                         
                             .footer_subscribe-social-icons {
-
                                 .title-small-text {
                                     margin-right: 20px;
                                     padding: 5px;
-                                    
                                 }
 
                                 .icon {
@@ -445,15 +440,13 @@
                         font-size: 12px;
                         line-height: 18px;  
 
-                        li {
+                        .footer_quick-links-item {
                             padding: 0 20px 20px;
                         }
 
                         .title-small-text {
                             font-family: "Helvetica", sans-serif;
                             font-size: 13.5px;
-                            line-height: 18px;
-                            text-decoration: none;
                             color: #6e7276;
                         }
 
@@ -466,7 +459,7 @@
                     padding-top: 30px;
                     text-align: center;
 
-                    p {
+                    .copyright_text {
                         font-family: "Helvetica", sans-serif;
                         font-size: 13.5px;
                         line-height: 18px;
@@ -485,7 +478,6 @@
             }
         }
     }
-
 
     .page-header .panel.wrapper,
     .page-footer {
@@ -529,6 +521,7 @@
             }
         }
     }
+
     .page-header .panel.wrapper {
         .switcher {
             .options {
@@ -597,7 +590,6 @@
 //  Navigation
 //  _____________________________________________
 
-
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__s) {
 
     //
@@ -605,8 +597,6 @@
     //  ---------------------------------------------
 
     .page-footer {
-        background-color: #FFF;
-        margin: auto;
         width: 100%;
 
         .footer {
@@ -616,7 +606,6 @@
         }
     }
 }
-
 
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
     .customer-name,
@@ -637,7 +626,6 @@
     }
 
     .page-footer .footer.content {
-
 
         .switcher-store {
             .lib-font-size(16);
@@ -865,7 +853,7 @@
     }
 
     .logo {
-        margin: -8px auto @indent__m 0;
+        margin: 0 auto @indent__m 0;
 
         img {
             max-height: inherit;
@@ -886,39 +874,19 @@
     }
 
     .page-footer {
-        background-color: #FFF;
-        margin: auto;
-        width: 100%;
-
         .footer {
             &.content {
                 max-width: 720px;
                               
                 .footer_quick-links {
-                    margin-top: 5px;
-                    border-bottom: 1px solid #eceded;
-
                     .footer_quick-links-list {
-                        display: flex;
-                        flex-wrap: wrap;
                         justify-content: flex-start;
-                        padding-top: 15px;
-                        font-size: 12px;
-                        line-height: 18px;
-                    }
-
-                    li {
-                        padding: 0 20px 20px;
                     }
                 }
                 
-
                 .footer_copyright {
                     flex-direction: row;
                     justify-content: space-between;
-                    display: flex;
-                    padding-top: 30px;
-                    text-align: center;
                 }
             }      
         }
@@ -933,17 +901,6 @@
     }
 }
 
-.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__lx) {
-    .page-footer {
-        .footer.content {
-            max-width: 940px; 
-        }    
-    }
-}
-
-
-
-
 // desctop version //
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__lx) {
@@ -957,20 +914,8 @@
                     display: flex;
                     flex-direction: column;
 
-                    .footer_header {
-                        .resetpage {
-                            .upsidedown {
-                                margin-left: 10px;
-                                font-size: 20px;
-                            }
-                        }
-                    }
-
                     .footer_page-links {
-                        display: flex;
                         flex-direction: row;
-                        padding: 20px 0;
-                        border-bottom: 1px solid #eceded;
 
                         .footer_links {
                             display: flex;
@@ -986,7 +931,7 @@
                                     margin: 0;
                                     cursor: pointer;
 
-                                    h3 {
+                                    .footer_accordion-label-big {
                                         margin-top: 0;
                                     }
 
@@ -1004,7 +949,7 @@
                                 display: none;
                             }
     
-                            ul {
+                            .footer_quick-links-list {
                                 flex-direction: column;
                             }
                         }
@@ -1027,17 +972,6 @@
                         }
                     }
                 }
-
-                .footer_quick-links-list {
-                    
-                    li:first-child {
-                        padding: 0 20px 20px 0;
-                    }
-
-                    li:nth-child(8) {
-                        padding: 0 20px 20px 0;
-                    }
-                }
             }
         }
     }
@@ -1049,17 +983,9 @@
         .footer {
             &.content {
                 max-width: 1344px;
-                padding: 0 0 60px 0;
                 
                 .footer_subscribe-social-icons {
                     display: flex;
-                }
-
-                .footer_quick-links-list {
-
-                    li:nth-child(9) {
-                        padding: 0 20px 20px 0;
-                    }
                 }
             }
         }
