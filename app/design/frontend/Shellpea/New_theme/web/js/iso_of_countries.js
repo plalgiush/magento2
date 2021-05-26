@@ -10,7 +10,7 @@ define([
                     for (let i = 0; i < data.length; i++) {
                         // console.log(data[i]);  // вывести каждый элемент
                     }
-                    for (var {id: id, full_name_english: f } of data) {
+                    for (let {id: id, full_name_english: f } of data) {
                         // console.log("- " + n + " : " + f); // вывод информации через деструктурированный метод
                         $('.column').append("- " + id + " : " + f + '<br />');
                     }
